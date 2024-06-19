@@ -1,0 +1,3 @@
+Grade 1 fatty,Grade 2 fatty,Grade 3 fatty,Hepatomegaly,Splenomegaly,Cirrhosis peripheral symptoms,IMT - R,IMT - L,AST,ALT,ALP,CHOLESTROL,TG,FBS,Hb,Hct,Plt,HDL,Urea,Cr,URIC_ACID,Diabetes,Hyperlipidemia,Hypertension,Alcoholic,sex,age,BMI,Uniforms,non-uniform,RUQ pain,Vague discomfort RUQ,Smoker,Methotrexate,Aspirin,Glucocorticoids,Calcium channel blockers,Estrogen,Tetracycline,Nucleolysis analogs,Chemotherapy drugs,Tamoxifen
+1,0,0,0,0,1,0.7,0.6,30,25,85,180,150,100,13.5,40,250,45,20,1.1,6,0,1,0,1,1,50,22,1,0,1,0,0,0,0,0,0,0,0,0,0
+0,1,0,1,0,0,0.8,0.7,35,30,90,190,160,110,14,42,260,50,22,1.2,7,1,0,1,0,0,55,24,0,1,0,1,1,0,0,1,0,0,0,0,0

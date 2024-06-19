@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    direction: rtl; /* Set direction to RTL */
+}
+.wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse; /* RTL layout */
+}
