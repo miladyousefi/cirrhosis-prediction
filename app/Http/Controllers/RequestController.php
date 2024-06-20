@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\RequestStoreRequest;
 use App\Models\Patient;
+use App\Models\Request as ModelsRequest;
 use App\Models\User;
 use Exception;
 use Illuminate\Http\Request;
@@ -12,10 +13,10 @@ use Illuminate\Support\Facades\Http;
 
 class RequestController extends Controller
 {
-    
+
     public function index(Request $request)
     {
-        
+
         if($request->has('patient_id')){
             $patient=Patient::findOrFail($request->patient_id);
             return view('user.request',compact('patient'));
@@ -55,7 +56,10 @@ class RequestController extends Controller
                 if (is_array($prediction)) {
                     $prediction = $prediction[0]['prediction'] ?? 'Prediction not available';
                 }
-
+                if($prediction==1){
+                    $data['result']=$prediction;
+                    ModelsRequest::create($data);
+                }
                 return view('user.result', ['prediction' => $prediction]);
             } else {
                 return view('user.result', ['prediction' => 'Prediction request failed']);
