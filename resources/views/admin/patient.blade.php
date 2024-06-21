@@ -2,10 +2,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="card">
-            <div class="card-header">
-                <a class="btn btn-success" href="{{route('admin.create.user')}}">ثبت پزشک جدید</a>
-
-            </div>
+            <div class="card-header">بیماران</div>
             <div class="card-body p-0">
                 <table class="table">
                     <thead>
@@ -15,16 +12,15 @@
                         <th scope="col">کد ملی</th>
                         <th scope="col">تعداد درخواست</th>
                         <th scope="col">عملیات</th>
-
                       </tr>
                     </thead>
                     <tbody  >
-                        @foreach ($users as $index=>$user)
+                        @foreach ($patients as $index=>$patient)
                             <tr>
                                 <th scope="row">{{$index+1}}</th>
-                                <td>{{$user->full_name}}</td>
-                                <td>{{$user->national_code}}</td>
-                                <td>{{$user->requests()->count()}}</td>
+                                <td>{{$patient->full_name}}</td>
+                                <td>{{$patient->national_code}}</td>
+                                <td>{{$patient->requests()->count()}}</td>
                                 <td>
                                     <a href="#" class="btn btn-danger btn-sm">حذف</a>
                                 </td>
@@ -33,7 +29,7 @@
                     </tbody>
                   </table>
                   <div class="text-center mt-3">
-                  {{$users->links('layouts.paginate')}}
+                  {{$patients->links('layouts.paginate')}}
                   </div>
             </div>
         </div>

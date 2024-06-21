@@ -20,4 +20,8 @@ class Patient extends Model
         'file_code',
         'sex'
     ];
+    public function requests(){
+        return $this->hasMany(Request::class, 'patient_id');
+
+    }
 }

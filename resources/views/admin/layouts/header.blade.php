@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header pt-3">
     <div class="navbar">
         <div class="user-name">
             <h5>داشبورد ادمین</h5>
@@ -14,3 +14,4 @@
         </div>
     </div>
 </div>
+<hr>

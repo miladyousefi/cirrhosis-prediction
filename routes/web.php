@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\PatientController as AdminPatientController;
 use App\Http\Controllers\Admin\RequestController as AdminRequestController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\UserController;
@@ -11,6 +12,7 @@ use App\Http\Controllers\PatientController;
 use App\Http\Controllers\RequestController;
 use App\Http\Controllers\SettingController as ControllersSettingController;
 use App\Http\Controllers\UserController as ControllersUserController;
+use App\Models\Patient;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,9 +53,14 @@ Route::post('admin-do-login', [AuthController::class,'admin_do_login'])->name('a
 Route::prefix('admin')->middleware('auth:admin')->group(function () {
     Route::get('dashboard', [AdminDashboardController::class,'index'])->name('admin.dashboard');
     Route::get('user', [UserController::class,'index'])->name('admin.user');
+    Route::get('create-user', [UserController::class,'create'])->name('admin.create.user');
+    Route::post('user-store', [UserController::class,'store'])->name('admin.store.user');
+
     Route::get('request', [AdminRequestController::class,'index'])->name('admin.request');
     Route::get('setting', [SettingController::class,'index'])->name('admin.setting');
     Route::post('setting-update', [SettingController::class,'update'])->name('admin.setting.update');
+
+    Route::get('patient', [AdminPatientController::class,'index'])->name('admin.patient');
 
 
 });

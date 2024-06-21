@@ -43,9 +43,9 @@
               @foreach ($requests as $index=>$request)
               <tr>
                 <th scope="row">{{ $index+1 }}</th>
-                <td>{{ $request->patient()->first_name }}</td>
-                <td>{{ $request->patient()->last_name }}</td>
-                <td>{{ $request->patient()->national_code }}</td>
+                <td>{{ $request->patient->first_name }}</td>
+                <td>{{ $request->patient->last_name }}</td>
+                <td>{{ $request->patient->national_code }}</td>
                 <td>{{ $request->result }}</td>
 
                 <td class="text-center">
