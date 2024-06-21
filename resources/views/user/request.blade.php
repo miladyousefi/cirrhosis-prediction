@@ -130,37 +130,37 @@
                     
                     <div class="col-md-3 mt-2">
                         <label for="IMTR">IMT – راست</label>
-                        <input type="number" class="form-control" name="IMT_-_R" id="IMTR" value="0.9" step="0.1">
+                        <input type="number" class="form-control" name="IMT_-_R" id="IMTR" step="0.1">
                     </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="IMTL">IMT – چپ</label>
-                        <input type="number" class="form-control" name="IMT_-_L" id="IMTL" value="0.8" step="0.1">
+                        <input type="number" class="form-control" name="IMT_-_L" id="IMTL" step="0.1">
                     </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="AST">AST</label>
-                        <input type="number" class="form-control" name="AST" id="AST" value="50">
+                        <input type="number" class="form-control" name="AST" id="AST" >
                     </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="ALT">ALT</label>
-                        <input type="number" class="form-control" name="ALT" id="ALT" value="40">
+                        <input type="number" class="form-control" name="ALT" id="ALT">
                     </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="ALP">ALP</label>
-                        <input type="number" class="form-control" name="ALP" id="ALP" value="80">
+                        <input type="number" class="form-control" name="ALP" id="ALP">
                     </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="CHOLESTROL">کلسترول</label>
-                        <input type="number" class="form-control" name="CHOLESTROL" id="CHOLESTROL" value="200">
+                        <input type="number" class="form-control" name="CHOLESTROL" id="CHOLESTROL">
                     </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="TG">تری گلیسیرید</label>
-                        <input type="number" class="form-control" name="TG" id="TG" value="150">
+                        <input type="number" class="form-control" name="TG" id="TG">
                     </div>
                     <div class="col-md-3 mt-2">
                         <label for="BMI">BMI</label>
@@ -184,44 +184,44 @@
                 <div class="row">
                     <div class="col-md-2 mt-2">
                         <label for="FBS">FBS</label>
-                        <input type="number" class="form-control" name="FBS" id="FBS" value="90">
+                        <input type="number" class="form-control" name="FBS" id="FBS">
                     </div>
                     <div class="col-md-2 mt-2">
                         <label for="Hb">Hb</label>
-                        <input type="number" class="form-control" name="Hb" id="Hb" value="14">
+                        <input type="number" class="form-control" name="Hb" id="Hb">
                     </div>
         
                     <div class="col-md-2 mt-2">
                         <label for="Hct">Hct</label>
-                        <input type="number" class="form-control" name="Hct" id="Hct" value="42">
+                        <input type="number" class="form-control" name="Hct" id="Hct">
                     </div>
                     <div class="col-md-2 mt-2">
                         <label for="plt">plt</label>
-                        <input type="number" class="form-control" name="Plt" id="Plt" value="250">
+                        <input type="number" class="form-control" name="Plt" id="Plt">
                     </div>
         
                     <div class="col-md-2 mt-2">
                         <label for="HDL">HDL</label>
-                        <input type="number" class="form-control" name="HDL" id="HDL" value="45">
+                        <input type="number" class="form-control" name="HDL" id="HDL">
                     </div>
                     <div class="col-md-2 mt-2">
                         <label for="Urea">اوریا</label>
-                        <input type="number" class="form-control" name="Urea" id="Urea" value="30">
+                        <input type="number" class="form-control" name="Urea" id="Urea">
                     </div>
         
                     <div class="col-md-2 mt-2">
                         <label for="Cr">Cr</label>
-                        <input type="number" class="form-control" name="Cr" id="Cr" value="1.2" step="0.1">
+                        <input type="number" class="form-control" name="Cr" id="Cr" step="0.1">
                     </div>
                     <div class="col-md-2 mt-2">
                         <label for="URIC_ACID">اسید اوریک</label>
-                        <input type="number" class="form-control" name="URIC_ACID" id="URIC_ACID" value="5.5" step="0.1">
+                        <input type="number" class="form-control" name="URIC_ACID" id="URIC_ACID" step="0.1">
                     </div>
         
                     <div class="col-md-2 mt-2">
                         <label>دیابت</label>
                         <div class="form-check">
-                            <input type="radio" name="Diabetes" id="DiabetesYes" value="1" class="form-check-input" checked>
+                            <input type="radio" name="Diabetes" id="DiabetesYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="DiabetesYes">بله</label>
                         </div>
                         <div class="form-check">
@@ -236,7 +236,7 @@
                             <label class="form-check-label" for="HyperlipidemiaYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Hyperlipidemia" id="HyperlipidemiaNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Hyperlipidemia" id="HyperlipidemiaNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="HyperlipidemiaNo">خیر</label>
                         </div>
                     </div>
@@ -244,7 +244,7 @@
                     <div class="col-md-2 mt-2">
                         <label>فشار خون بالا</label>
                         <div class="form-check">
-                            <input type="radio" name="Hypertension" id="HypertensionYes" value="1" class="form-check-input" checked>
+                            <input type="radio" name="Hypertension" id="HypertensionYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="HypertensionYes">بله</label>
                         </div>
                         <div class="form-check">
@@ -259,7 +259,7 @@
                             <label class="form-check-label" for="AlcoholicYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Alcoholic" id="AlcoholicNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Alcoholic" id="AlcoholicNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="AlcoholicNo">خیر</label>
                         </div>
                     </div>
@@ -270,7 +270,7 @@
                             <label class="form-check-label" for="SmokerYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Smoker" id="SmokerNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Smoker" id="SmokerNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="SmokerNo">خیر</label>
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                             <label class="form-check-label" for="UniformsYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Uniforms" id="UniformsNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Uniforms" id="UniformsNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="UniformsNo">خیر</label>
                         </div>
                     </div>
@@ -293,7 +293,7 @@
                             <label class="form-check-label" for="non-uniformYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="non_uniform" id="non-uniformNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="non_uniform" id="non-uniformNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="non-uniformNo">خیر</label>
                         </div>
                     </div>
@@ -305,7 +305,7 @@
                             <label class="form-check-label" for="RUQ painYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="RUQ pain" id="RUQ painNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="RUQ pain" id="RUQ painNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="RUQ painNo">خیر</label>
                         </div>
                     </div>
@@ -316,7 +316,7 @@
                             <label class="form-check-label" for="Vague discomfort RUQYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Vague_discomfort_RUQ" id="Vague discomfort RUQNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Vague_discomfort_RUQ" id="Vague discomfort RUQNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="Vague discomfort RUQNo">خیر</label>
                         </div>
                     </div>
@@ -337,7 +337,7 @@
                             <label class="form-check-label" for="MethotrexateYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Methotrexate" id="MethotrexateNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Methotrexate" id="MethotrexateNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="MethotrexateNo">خیر</label>
                         </div>
                     </div>
@@ -349,7 +349,7 @@
                             <label class="form-check-label" for="AspirinYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Aspirin" id="AspirinNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Aspirin" id="AspirinNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="AspirinNo">خیر</label>
                         </div>
                     </div>
@@ -361,7 +361,7 @@
                             <label class="form-check-label" for="GlucocorticoidsYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Glucocorticoids" id="GlucocorticoidsNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Glucocorticoids" id="GlucocorticoidsNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="GlucocorticoidsNo">خیر</label>
                         </div>
                     </div>
@@ -373,7 +373,7 @@
                             <label class="form-check-label" for="CalciumChannelBlockersYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Calcium channel blockers" id="CalciumChannelBlockersNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Calcium channel blockers" id="CalciumChannelBlockersNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="CalciumChannelBlockersNo">خیر</label>
                         </div>
                     </div>
@@ -385,7 +385,7 @@
                             <label class="form-check-label" for="EstrogenYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Estrogen" id="EstrogenNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Estrogen" id="EstrogenNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="EstrogenNo">خیر</label>
                         </div>
                     </div>
@@ -397,7 +397,7 @@
                             <label class="form-check-label" for="TetracyclineYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Tetracycline" id="TetracyclineNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Tetracycline" id="TetracyclineNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="TetracyclineNo">خیر</label>
                         </div>
                     </div>
@@ -409,7 +409,7 @@
                             <label class="form-check-label" for="NucleolysisAnalogsYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Nucleolysis analogs" id="NucleolysisAnalogsNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Nucleolysis analogs" id="NucleolysisAnalogsNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="NucleolysisAnalogsNo">خیر</label>
                         </div>
                     </div>
@@ -421,7 +421,7 @@
                             <label class="form-check-label" for="ChemotherapyDrugsYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Chemotherapy drugs" id="ChemotherapyDrugsNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Chemotherapy drugs" id="ChemotherapyDrugsNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="ChemotherapyDrugsNo">خیر</label>
                         </div>
                     </div>
@@ -433,7 +433,7 @@
                             <label class="form-check-label" for="TamoxifenYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="Tamoxifen" id="TamoxifenNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Tamoxifen" id="TamoxifenNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="TamoxifenNo">خیر</label>
                         </div>
                     </div>
