@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>ورود پزشکان</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -26,7 +26,7 @@
         <div class="col-md-6 d-flex flex-column justify-content-between p-5" style="background-color: #EFEFEF; overflow: hidden;">
             <!-- Header -->
             <div class="d-flex justify-content-between align-items-center">
-                <button type="button" class="btn btn-outline-primary">ثبت نام</button>
+                <div></div>
                 <a href="/">بازگشت</a>
             </div>
             <div class="text-right">
@@ -56,11 +56,9 @@
                         <label for="password" class="form-label">رمز عبور خود را وارد کنید</label>
                         <input type="password" class="form-control rounded-0 py-3 text-right border border-0" id="password"
                             name="password" placeholder="رمز عبور" required>
-                        <p class="mt-2">رمزعبور خود را فراموش کردید ؟</p>
                     </div>
                     <div class="text-center mt-5">
                         <button type="submit" class="btn btn-primary btn-block py-3 rounded-0">ورود</button>
-                        <p class="mt-2">حساب کاربری ندارید ؟</p>
                     </div>
                 </form>
             </div>
