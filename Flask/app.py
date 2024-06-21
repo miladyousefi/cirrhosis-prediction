@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from flask import Flask, request, jsonify
-import joblib
 import pickle
 
 app = Flask(__name__)
@@ -44,7 +43,10 @@ def predict_with_optional_features(new_data, model_path='adaboost_model.pkl'):
 def predict():
     try:
         # Load new data from request
-        new_data = pd.DataFrame(request.json)
+        data = request.json
+
+        # Convert the JSON data to a DataFrame
+        new_data = pd.DataFrame([data])
 
         # Make predictions
         predictions = predict_with_optional_features(new_data)
@@ -57,4 +59,4 @@ def predict():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5151)
+    app.run(debug=True, port=5151)

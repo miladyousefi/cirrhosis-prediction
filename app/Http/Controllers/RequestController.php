@@ -26,30 +26,31 @@ class RequestController extends Controller
     }
     public function store(RequestStoreRequest $request)
     {
-        $data = $request->validated();
+        $data = $request->all();
         $data['user_id']=auth()->user()->id;
-
         try {
-            if($request->has('phone') || $request->has('file_code')){
-                $patient=Patient::where(['phone'=>$data['phone']])->orWhere(['file_code'=>$data['file_code']])->first();
-                if($patient){
-                    $data['patient_id']=$patient->id;
+            $patient=Patient::where(['phone'=>$data['phone']])->first();
+            if($patient){
+                $data['patient_id']=$patient->id;
+            }else{
+                $data['password']=Hash::make($request->phone);
+                $patient=Patient::create($data);
+                $data['patient_id']=$patient->id;
+            }
+            $data_pass = [];
+            foreach ($data as $key => $value) {
+                $newKey = str_replace('_', ' ', $key);
+                if($value=="0" || $value=="1"){
+                    $data_pass[$newKey] = (int) $value;
+
                 }else{
-                    $data['password']=Hash::make($request->phone);
-                    $patient=Patient::create($data);
-                    $data['patient_id']=$patient->id;
+                    $data_pass[$newKey] = (float)$value;
+
                 }
             }
-            $data['Grade 1 fatty'] = $data['grade1fatty'];
-            $data['Grade 2 fatty'] = $data['grade2fatty'];
-            $data['Grade 3 fatty'] = $data['grade3fatty'];
-            $data['Cirrhosis peripheral symptoms'] = $data['cirrhosisSymptoms'];
-            unset($data['grade1fatty']);
-            unset($data['_token']);
-            unset($data['grade2fatty']);
-            unset($data['grade3fatty']);
-            unset($data['cirrhosisSymptoms']);
-            $data_pass[]=$data;
+            $data_pass['URIC_ACID']=$data_pass['URIC ACID'];
+
+            // dd($data_pass);
             $response = Http::post('http://127.0.0.1:5151/predict', $data_pass);
             if ($response->successful()) {
                 $prediction = $response->json('prediction');
@@ -58,7 +59,7 @@ class RequestController extends Controller
                 }
                 if($prediction==1){
                     $data['result']=$prediction;
-                    ModelsRequest::create($data);
+                    $req=ModelsRequest::create($data);
                 }
                 return view('user.result', ['prediction' => $prediction]);
             } else {

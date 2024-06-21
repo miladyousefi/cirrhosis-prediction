@@ -59,11 +59,11 @@
                     <div class="col-md-3 mt-2">
                         <label>گرید ۱ چربی</label>
                         <div class="form-check">
-                            <input type="radio" name="grade1fatty" id="grade1fatty" value="1" class="form-check-input">
+                            <input type="radio" name="Grade 1 fatty" id="grade1fatty" value="1" class="form-check-input">
                             <label class="form-check-label" for="grade1fatty">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="grade1fattyNo" id="grade1fattyNo" value="0" class="form-check-input">
+                            <input type="radio" name="Grade 1 fatty" id="grade1fattyNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="grade1fattyNo">خیر</label>
                         </div>
                     </div>
@@ -71,11 +71,11 @@
                     <div class="col-md-3 mt-2">
                         <label>گرید ۲ چربی</label>
                         <div class="form-check">
-                            <input type="radio" name="grade2fatty" id="grade2fattyYes" value="1" class="form-check-input">
+                            <input type="radio" name="Grade 2 fatty" id="grade2fattyYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="grade2fattyYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="grade2fatty" id="grade2fattyNo" value="0" class="form-check-input">
+                            <input type="radio" name="Grade 2 fatty" id="grade2fattyNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="grade2fattyNo">خیر</label>
                         </div>
                     </div>
@@ -83,11 +83,11 @@
                     <div class="col-md-3 mt-2">
                         <label>گرید ۳ چربی</label>
                         <div class="form-check">
-                            <input type="radio" name="grade3fatty" id="grade3fattyYes" value="1" class="form-check-input">
+                            <input type="radio" name="Grade 3 fatty" id="grade3fattyYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="grade3fattyYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="grade3fatty" id="grade3fattyNo" value="0" class="form-check-input">
+                            <input type="radio" name="Grade 3 fatty" id="grade3fattyNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="grade3fattyNo">خیر</label>
                         </div>
                     </div>
@@ -95,11 +95,11 @@
                     <div class="col-md-3 mt-2">
                         <label>هپاتومگالی</label>
                         <div class="form-check">
-                            <input type="radio" name="hepatomegaly" id="hepatomegalyYes" value="1" class="form-check-input">
+                            <input type="radio" name="Hepatomegaly" id="hepatomegalyYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="hepatomegalyYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="hepatomegaly" id="hepatomegalyNo" value="0" class="form-check-input">
+                            <input type="radio" name="Hepatomegaly" id="hepatomegalyNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="hepatomegalyNo">خیر</label>
                         </div>
                     </div>
@@ -119,23 +119,23 @@
                     <div class="col-md-3 mt-2">
                         <label>علائم سیروز محیطی</label>
                         <div class="form-check">
-                            <input type="radio" name="cirrhosisSymptoms" id="cirrhosisSymptomsYes" value="1" class="form-check-input">
+                            <input type="radio" name="Cirrhosis_peripheral_symptoms" id="cirrhosisSymptomsYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="cirrhosisSymptomsYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="cirrhosisSymptoms" id="cirrhosisSymptomsNo" value="0" class="form-check-input">
+                            <input type="radio" name="Cirrhosis_peripheral_symptoms" id="cirrhosisSymptomsNo" value="0" class="form-check-input">
                             <label class="form-check-label" for="cirrhosisSymptomsNo">خیر</label>
                         </div>
                     </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="IMTR">IMT – راست</label>
-                        <input type="number" class="form-control" name="IMTR" id="IMTR" value="0.9" step="0.1">
+                        <input type="number" class="form-control" name="IMT_-_R" id="IMTR" value="0.9" step="0.1">
                     </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="IMTL">IMT – چپ</label>
-                        <input type="number" class="form-control" name="IMTL" id="IMTL" value="0.8" step="0.1">
+                        <input type="number" class="form-control" name="IMT_-_L" id="IMTL" value="0.8" step="0.1">
                     </div>
                     
                     <div class="col-md-3 mt-2">
@@ -197,7 +197,7 @@
                     </div>
                     <div class="col-md-2 mt-2">
                         <label for="plt">plt</label>
-                        <input type="number" class="form-control" name="plt" id="plt" value="250">
+                        <input type="number" class="form-control" name="Plt" id="Plt" value="250">
                     </div>
         
                     <div class="col-md-2 mt-2">
@@ -214,8 +214,8 @@
                         <input type="number" class="form-control" name="Cr" id="Cr" value="1.2" step="0.1">
                     </div>
                     <div class="col-md-2 mt-2">
-                        <label for="UricAcid">اسید اوریک</label>
-                        <input type="number" class="form-control" name="UricAcid" id="UricAcid" value="5.5" step="0.1">
+                        <label for="URIC_ACID">اسید اوریک</label>
+                        <input type="number" class="form-control" name="URIC_ACID" id="URIC_ACID" value="5.5" step="0.1">
                     </div>
         
                     <div class="col-md-2 mt-2">
@@ -274,6 +274,54 @@
                             <label class="form-check-label" for="SmokerNo">خیر</label>
                         </div>
                     </div>
+
+                    <div class="col-md-2 mt-2">
+                        <label>Uniforms</label>
+                        <div class="form-check">
+                            <input type="radio" name="Uniforms" id="UniformsYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="UniformsYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Uniforms" id="UniformsNo" value="0" class="form-check-input" checked>
+                            <label class="form-check-label" for="UniformsNo">خیر</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <label>non_uniform</label>
+                        <div class="form-check">
+                            <input type="radio" name="non_uniform" id="non-uniformYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="non-uniformYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="non_uniform" id="non-uniformNo" value="0" class="form-check-input" checked>
+                            <label class="form-check-label" for="non-uniformNo">خیر</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 mt-2">
+                        <label>RUQ pain</label>
+                        <div class="form-check">
+                            <input type="radio" name="RUQ pain" id="RUQ painYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="RUQ painYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="RUQ pain" id="RUQ painNo" value="0" class="form-check-input" checked>
+                            <label class="form-check-label" for="RUQ painNo">خیر</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <label>Vague discomfort RUQ</label>
+                        <div class="form-check">
+                            <input type="radio" name="Vague_discomfort_RUQ" id="Vague discomfort RUQYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="Vague discomfort RUQYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Vague_discomfort_RUQ" id="Vague discomfort RUQNo" value="0" class="form-check-input" checked>
+                            <label class="form-check-label" for="Vague discomfort RUQNo">خیر</label>
+                        </div>
+                    </div>
+
+                    
                 </div>
                 <button type="button" class="btn btn-secondary mt-5" onclick="prevStep()">قبلی</button>
                 <button type="button" class="btn btn-primary mt-5" onclick="nextStep()">بعدی</button>
@@ -321,11 +369,11 @@
                     <div class="col-md-3 mt-2">
                         <label>مسدود کننده های کانال کلسیم</label>
                         <div class="form-check">
-                            <input type="radio" name="CalciumChannelBlockers" id="CalciumChannelBlockersYes" value="1" class="form-check-input">
+                            <input type="radio" name="Calcium channel blockers" id="CalciumChannelBlockersYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="CalciumChannelBlockersYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="CalciumChannelBlockers" id="CalciumChannelBlockersNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Calcium channel blockers" id="CalciumChannelBlockersNo" value="0" class="form-check-input" checked>
                             <label class="form-check-label" for="CalciumChannelBlockersNo">خیر</label>
                         </div>
                     </div>
@@ -357,11 +405,11 @@
                     <div class="col-md-3 mt-2">
                         <label>آنالوگ های نوکلئولیز</label>
                         <div class="form-check">
-                            <input type="radio" name="NucleolysisAnalogs" id="NucleolysisAnalogsYes" value="1" class="form-check-input">
+                            <input type="radio" name="Nucleolysis analogs" id="NucleolysisAnalogsYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="NucleolysisAnalogsYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="NucleolysisAnalogs" id="NucleolysisAnalogsNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Nucleolysis analogs" id="NucleolysisAnalogsNo" value="0" class="form-check-input" checked>
                             <label class="form-check-label" for="NucleolysisAnalogsNo">خیر</label>
                         </div>
                     </div>
@@ -369,11 +417,11 @@
                     <div class="col-md-3 mt-2">
                         <label>داروهای شیمی درمانی</label>
                         <div class="form-check">
-                            <input type="radio" name="ChemotherapyDrugs" id="ChemotherapyDrugsYes" value="1" class="form-check-input">
+                            <input type="radio" name="Chemotherapy drugs" id="ChemotherapyDrugsYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="ChemotherapyDrugsYes">بله</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" name="ChemotherapyDrugs" id="ChemotherapyDrugsNo" value="0" class="form-check-input" checked>
+                            <input type="radio" name="Chemotherapy drugs" id="ChemotherapyDrugsNo" value="0" class="form-check-input" checked>
                             <label class="form-check-label" for="ChemotherapyDrugsNo">خیر</label>
                         </div>
                     </div>
