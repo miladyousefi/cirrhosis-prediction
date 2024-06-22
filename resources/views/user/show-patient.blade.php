@@ -49,15 +49,10 @@
                     <div class="row mt-2 p-2 py-4" style="border-radius: 15px; background-color: #eeeff0">
 
                         <div class="col-3">
-                            {{ $index + 1 }} - {{ $request->patient->first_name }} {{ $request->patient->last_name }}
+                            {{ $index + 1 }}
                         </div>
-                        <div class="col-2">
-                            کد ملی : {{ $request->patient->national_code }}
-                        </div>
-                        <div class="col-2">
-                            ش-پرونده : {{ $request->patient->file_code }}
-                        </div>
-                        <div class="col-2 text-center">
+
+                        <div class="col-6 text-center">
                             {{ $request->result ? ($request->result == 1 ? 'مبتلا به بیماری سیروس کبدی' : 'سالم') : '-' }}
                         </div>
                         <div class="col-3 text-left">
