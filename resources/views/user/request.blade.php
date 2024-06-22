@@ -138,27 +138,27 @@
             <div class="form-step" style="display: none;">
                 <div class="row">
                     
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label for="AST">AST</label>
                         <input type="number" class="form-control" name="AST" id="AST" >
                     </div>
                     
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label for="ALT">ALT</label>
                         <input type="number" class="form-control" name="ALT" id="ALT">
                     </div>
                     
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label for="ALP">ALP</label>
                         <input type="number" class="form-control" name="ALP" id="ALP">
                     </div>
                     
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label for="CHOLESTROL">کلسترول</label>
                         <input type="number" class="form-control" name="CHOLESTROL" id="CHOLESTROL">
                     </div>
                     
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label for="TG">تری گلیسیرید</label>
                         <input type="number" class="form-control" name="TG" id="TG">
                     </div>
