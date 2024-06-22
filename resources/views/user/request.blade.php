@@ -413,13 +413,7 @@
                         </div>
                         <label class="form-check-label d-inline-block" for="TamoxifenYes">تاموکسیفن</label>
                     </div>
-                    <div class="col-md-3 mt-2">
-                        <div class="form-check d-inline-block">
-                            <input type="checkbox" name="Calcium channel blockers" id="CalciumChannelBlockersYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
-                            <label></label>
-                        </div>
-                        <label class="form-check-label d-inline-block" for="CalciumChannelBlockersYes">مسدود کننده های کانال کلسیم</label>
-                    </div>
+
 
                     <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
@@ -427,6 +421,13 @@
                             <label></label>
                         </div>
                         <label class="form-check-label d-inline-block" for="NucleolysisAnalogsYes">آنالوگ های نوکلئولیز</label>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <div class="form-check d-inline-block">
+                            <input type="checkbox" name="Calcium channel blockers" id="CalciumChannelBlockersYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <label></label>
+                        </div>
+                        <label class="form-check-label d-inline-block" for="CalciumChannelBlockersYes">مسدود کننده های کانال کلسیم</label>
                     </div>
 
 
