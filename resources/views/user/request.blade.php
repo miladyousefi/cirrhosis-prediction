@@ -272,7 +272,7 @@
                                     class="form-check-input" onchange="this.value=this.checked?1:0;">
                                 <label></label>
                             </div>
-                            <label class="form-check-label d-inline-block" for="grade1fatty">کبدچرب گرید یک</label>
+                            <label class="form-check-label d-inline-block" for="grade1fatty">کبدچربگرید یک</label>
                         </div>
 
                         <div class="col-md-2 mt-2">
