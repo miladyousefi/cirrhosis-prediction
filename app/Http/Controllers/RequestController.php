@@ -49,8 +49,6 @@ class RequestController extends Controller
                 }
             }
             $data_pass['URIC_ACID']=$data_pass['URIC ACID'];
-
-            // dd($data_pass);
             $response = Http::post('http://127.0.0.1:5151/predict', $data_pass);
             if ($response->successful()) {
                 $prediction = $response->json('prediction');
@@ -66,7 +64,6 @@ class RequestController extends Controller
                 return view('user.result', ['prediction' => 'Prediction request failed']);
             }
         } catch (Exception $e) {
-            // Display the exception message for debugging
             return view('user.result', ['prediction' => 'Error: ' . $e->getMessage()]);
         }
     }

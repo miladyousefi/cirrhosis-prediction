@@ -17,7 +17,7 @@
         <h5 class="mt-2">اطلاعات هویتی بیمار</h5>
         <hr>
         <div class="row">
-        
+
         <div class="col-md-2 mt-2">
             <label for="first_name">نام</label>
             <input type="text" name="first_name" class="form-control" id="first_name" value="{{isset($patient) ? $patient->first_name : null}}">
@@ -61,7 +61,7 @@
                         <label for="BMI">BMI</label>
                         <div class="row">
                             <div class="col-md-5">
-                                <input type="number" name="BMI" class="form-control" id="BMI" step="0.1">
+                                <input type="number" name="BMI" class="form-control" id="BMI" step="0.1"    >
                             </div>
                             <div class="col-md-7">
                                 <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#bmiModal">محاسبه BMI</button>
@@ -91,7 +91,7 @@
                             <label class="form-check-label" for="HyperlipidemiaNo">خیر</label>
                         </div>
                     </div>
-        
+
                     <div class="col-md-2 mt-2">
                         <label>فشار خون بالا</label>
                         <div class="form-check">
@@ -128,36 +128,36 @@
                 </div>
                 <div class="text-left">
                     <button type="button" class="btn btn-primary mt-5" onclick="nextStep()">بعدی</button>
-    
+
                 </div>
             </div>
-            
 
-    
+
+
             <!-- Step 2 -->
             <div class="form-step" style="display: none;">
                 <div class="row">
-                    
+
                     <div class="col-md-2 mt-2">
                         <label for="AST">AST</label>
                         <input type="number" class="form-control" name="AST" id="AST" >
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label for="ALT">ALT</label>
                         <input type="number" class="form-control" name="ALT" id="ALT">
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label for="ALP">ALP</label>
                         <input type="number" class="form-control" name="ALP" id="ALP">
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label for="CHOLESTROL">کلسترول</label>
                         <input type="number" class="form-control" name="CHOLESTROL" id="CHOLESTROL">
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label for="TG">تری گلیسیرید</label>
                         <input type="number" class="form-control" name="TG" id="TG">
@@ -171,7 +171,7 @@
                         <label for="Hb">Hb</label>
                         <input type="number" class="form-control" name="Hb" id="Hb">
                     </div>
-        
+
                     <div class="col-md-2 mt-2">
                         <label for="Hct">Hct</label>
                         <input type="number" class="form-control" name="Hct" id="Hct">
@@ -180,7 +180,7 @@
                         <label for="plt">plt</label>
                         <input type="number" class="form-control" name="Plt" id="Plt">
                     </div>
-        
+
                     <div class="col-md-2 mt-2">
                         <label for="HDL">HDL</label>
                         <input type="number" class="form-control" name="HDL" id="HDL">
@@ -189,7 +189,7 @@
                         <label for="Urea">اوریا</label>
                         <input type="number" class="form-control" name="Urea" id="Urea">
                     </div>
-        
+
                     <div class="col-md-2 mt-2">
                         <label for="Cr">Cr</label>
                         <input type="number" class="form-control" name="Cr" id="Cr" step="0.1">
@@ -199,7 +199,7 @@
                         <input type="number" class="form-control" name="URIC_ACID" id="URIC_ACID" step="0.1">
                     </div>
 
-                    
+
                 </div>
                <div class="text-left">
                 <button type="button" class="btn btn-secondary mt-5" onclick="prevStep()">قبلی</button>
@@ -216,7 +216,7 @@
                         <label for="IMTR">IMT – راست</label>
                         <input type="number" class="form-control" name="IMT_-_R" id="IMTR" step="0.1">
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label for="IMTL">IMT – چپ</label>
                         <input type="number" class="form-control" name="IMT_-_L" id="IMTL" step="0.1">
@@ -232,7 +232,7 @@
                             <label class="form-check-label" for="grade1fattyNo">خیر</label>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label>گرید ۲ چربی</label>
                         <div class="form-check">
@@ -244,7 +244,7 @@
                             <label class="form-check-label" for="grade2fattyNo">خیر</label>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label>گرید ۳ چربی</label>
                         <div class="form-check">
@@ -256,7 +256,7 @@
                             <label class="form-check-label" for="grade3fattyNo">خیر</label>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label>هپاتومگالی</label>
                         <div class="form-check">
@@ -268,7 +268,7 @@
                             <label class="form-check-label" for="hepatomegalyNo">خیر</label>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label>اسپلنومگالی</label>
                         <div class="form-check">
@@ -280,7 +280,7 @@
                             <label class="form-check-label" for="splenomegalyNo">خیر</label>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-2 mt-2">
                         <label>علائم سیروز محیطی</label>
                         <div class="form-check">
@@ -343,7 +343,7 @@
                     <button type="button" class="btn btn-primary mt-5" onclick="nextStep()">بعدی</button>
                    </div>
             </div>
-    
+
             <!-- Step 3 -->
             <div class="form-step">
                 <div class="row">
@@ -358,7 +358,7 @@
                             <label class="form-check-label" for="MethotrexateNo">خیر</label>
                         </div>
                     </div>
-        
+
                     <div class="col-md-2 mt-2">
                         <label>آسپرین</label>
                         <div class="form-check">
@@ -370,7 +370,7 @@
                             <label class="form-check-label" for="AspirinNo">خیر</label>
                         </div>
                     </div>
-        
+
                     <div class="col-md-2 mt-2">
                         <label>گلوکوکورتیکوئیدها</label>
                         <div class="form-check">
@@ -382,7 +382,7 @@
                             <label class="form-check-label" for="GlucocorticoidsNo">خیر</label>
                         </div>
                     </div>
-        
+
                     <div class="col-md-3 mt-2">
                         <label>مسدود کننده های کانال کلسیم</label>
                         <div class="form-check">
@@ -394,7 +394,7 @@
                             <label class="form-check-label" for="CalciumChannelBlockersNo">خیر</label>
                         </div>
                     </div>
-        
+
                     <div class="col-md-3 mt-2">
                         <label>آنالوگ های نوکلئولیز</label>
                         <div class="form-check">
@@ -406,8 +406,8 @@
                             <label class="form-check-label" for="NucleolysisAnalogsNo">خیر</label>
                         </div>
                     </div>
-        
-        
+
+
                     <div class="col-md-2 mt-2">
                         <label>تتراسایکلین</label>
                         <div class="form-check">
@@ -430,8 +430,8 @@
                             <label class="form-check-label" for="EstrogenNo">خیر</label>
                         </div>
                     </div>
-        
-                    
+
+
                     <div class="col-md-2 mt-2">
                         <label>داروهای شیمی درمانی</label>
                         <div class="form-check">
@@ -443,7 +443,7 @@
                             <label class="form-check-label" for="ChemotherapyDrugsNo">خیر</label>
                         </div>
                     </div>
-        
+
                     <div class="col-md-2 mt-2">
                         <label>تاموکسیفن</label>
                         <div class="form-check">
@@ -462,7 +462,7 @@
                 </div>
             </div>
     </div>
-    
+
     <!-- BMI Modal -->
     <div class="modal fade" id="bmiModal" tabindex="-1" role="dialog" aria-labelledby="bmiModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -489,7 +489,7 @@
             </div>
         </div>
     </div>
-    
+
 </form>
 </div>
 <script>
