@@ -23,7 +23,7 @@ class PatientSeeder extends Seeder
             'image'=>null,
             'phone'=>'09226295580',
             'file_code'=>'1425',
-            'sex'=>'M'
+            'sex'=>1
         ]);
     }
 }

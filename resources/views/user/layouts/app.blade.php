@@ -74,14 +74,18 @@
 
 <body class="text-right">
 
-    <div class="wrapper">
+    <div class="wrapper py-3">
 
         @include('user.layouts.side')
         <div class="main-content">
+            <div class="container-fluid ">
+
             @include('user.layouts.header')
+            </div>
 
             <div class="content">
-                <div class="container-fluid">
+                <div class="container-fluid ">
+
                     @if ($message = Session::get('success'))
                         <div class="alert alert-info rounded-0">
                             <p>{{ $message }}</p>
@@ -102,8 +106,9 @@
                             {{ session('error') }}
                         </div>
                     @endif
-                    @yield('content')
                 </div>
+                    
+                    @yield('content')
                
             </div>
         </div>

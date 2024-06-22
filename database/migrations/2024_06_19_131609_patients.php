@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('phone')->unique();
             $table->string('file_code')->unique();
-            $table->enum('sex',['F','M'])->default('M');    
+            $table->enum('sex',['0','1'])->default('0');    
             $table->timestamps();
         });
     }

@@ -35,6 +35,9 @@ Route::get('logout', [AuthController::class,'logout'])->name('logout');
 
 Route::prefix('user')->middleware('auth')->group(function () {
     Route::get('dashboard', [DashboardController::class,'index'])->name('dashboard');
+    Route::get('create-user', [DashboardController::class,'create'])->name('create-user');
+    Route::post('store-user', [DashboardController::class,'store'])->name('store-user');
+
     Route::get('request', [RequestController::class,'index'])->name('request');
     Route::post('request-store', [RequestController::class,'store'])->name('request.store');
     Route::get('user-list', [PatientController::class,'index'])->name('user');

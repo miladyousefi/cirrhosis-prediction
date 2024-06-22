@@ -1,5 +1,7 @@
 @extends('user.layouts.app')
 @section('content')
+<div class="container-fluid ">
+
 <div class="card">
     <div class="card-header bg-white">
           <div class="row">
@@ -47,5 +49,6 @@
             {{$patients->links('layouts.paginate')}}
           </div>
     </div>
+</div>
 </div>
 @endsection

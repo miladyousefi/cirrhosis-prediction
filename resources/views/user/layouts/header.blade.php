@@ -1,4 +1,4 @@
-<div class="header pt-3" >
+<div class="header pt-1" >
     <div class="navbar" style="padding-bottom: 0px !important;">
         <div class="user-name">
             <h6>{{ verta()->format('Y/m/d') }}</h6>

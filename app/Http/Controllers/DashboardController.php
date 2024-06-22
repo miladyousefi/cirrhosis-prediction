@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserStoreRequest;
 use App\Models\Note;
 use App\Models\Patient;
 use App\Models\Request as ModelsRequest;
@@ -29,15 +30,23 @@ class DashboardController extends Controller
      */
     public function create()
     {
-        //
+        return view('user.create-user');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(UserStoreRequest $request)
     {
-        //
+        $data=$request->validated();
+        $data['user_id']=auth()->user()->id;
+        $patient=Patient::create($data);
+        if($patient){
+            return redirect()->route('user')->with('success','کاربر با موفقیت ایجاد شد');
+
+        }
+        return redirect()->route('user')->with('error','مشکلی در روند ثبت درخواست به وجود آمده است');
+
     }
 
     /**

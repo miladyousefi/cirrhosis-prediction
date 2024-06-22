@@ -1,5 +1,7 @@
 @extends('user.layouts.app')
 @section('content')
+<div class="container-fluid ">
+
 @if ($prediction==1)
 <div class="card border border-danger " style="background-color: rgb(255, 160, 160)">
     <div class="card-header">
@@ -27,4 +29,5 @@
     </div>
 </div>
 @endif
+</div>
 @endsection

@@ -1,5 +1,7 @@
 @extends('user.layouts.app')
 @section('content')
+<div class="container-fluid ">
+
 <div class="card">
     <div class="card-header bg-white">
           تنظیمات
@@ -32,5 +34,6 @@
             </div>
         </form>
     </div>
+</div>
 </div>
 @endsection

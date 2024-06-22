@@ -1,5 +1,7 @@
 @extends('user.layouts.app')
 @section('content')
+<div class="container-fluid ">
+
 <form action="{{route('request.store')}}" method="POST" id="multiStepForm">
     @csrf
     <style>
@@ -11,8 +13,9 @@
             margin-right: 30px;
         }
     </style>
-    <div class="bg-light p-3 rounded">
-        <h5 class="mb-1">اطلاعات بیمار</h5>
+    <div>
+        <h5 class="mt-2">اطلاعات هویتی بیمار</h5>
+        <hr>
         <div class="row">
         
         <div class="col-md-2 mt-2">
@@ -50,93 +53,90 @@
     </div>
     <hr>
     <div class="bg-light p-3 rounded">
-        <h5 class="mb-1">فرم اطلاعات پزشکی</h5>
 
             <!-- Step 1 -->
             <div class="form-step">
+                <div class="row px-5">
+                    <div class="col-md-12 mt-2 mb-4">
+                        <label for="BMI">BMI</label>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <input type="number" name="BMI" class="form-control" id="BMI" step="0.1">
+                            </div>
+                            <div class="col-md-7">
+                                <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#bmiModal">محاسبه BMI</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-md-3 mt-2">
+                        <label>دیابت</label>
+                        <div class="form-check">
+                            <input type="radio" name="Diabetes" id="DiabetesYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="DiabetesYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Diabetes" id="DiabetesNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="DiabetesNo">خیر</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <label>چربی خون بالا</label>
+                        <div class="form-check">
+                            <input type="radio" name="Hyperlipidemia" id="HyperlipidemiaYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="HyperlipidemiaYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Hyperlipidemia" id="HyperlipidemiaNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="HyperlipidemiaNo">خیر</label>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-2 mt-2">
+                        <label>فشار خون بالا</label>
+                        <div class="form-check">
+                            <input type="radio" name="Hypertension" id="HypertensionYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="HypertensionYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Hypertension" id="HypertensionNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="HypertensionNo">خیر</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <label>الکلی</label>
+                        <div class="form-check">
+                            <input type="radio" name="Alcoholic" id="AlcoholicYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="AlcoholicYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Alcoholic" id="AlcoholicNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="AlcoholicNo">خیر</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <label>سیگاری</label>
+                        <div class="form-check">
+                            <input type="radio" name="Smoker" id="SmokerYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="SmokerYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Smoker" id="SmokerNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="SmokerNo">خیر</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-left">
+                    <button type="button" class="btn btn-primary mt-5" onclick="nextStep()">بعدی</button>
+    
+                </div>
+            </div>
+            
+
+    
+            <!-- Step 2 -->
+            <div class="form-step" style="display: none;">
                 <div class="row">
-                    
-                    <div class="col-md-3 mt-2">
-                        <label>گرید ۱ چربی</label>
-                        <div class="form-check">
-                            <input type="radio" name="Grade 1 fatty" id="grade1fatty" value="1" class="form-check-input">
-                            <label class="form-check-label" for="grade1fatty">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Grade 1 fatty" id="grade1fattyNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="grade1fattyNo">خیر</label>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 mt-2">
-                        <label>گرید ۲ چربی</label>
-                        <div class="form-check">
-                            <input type="radio" name="Grade 2 fatty" id="grade2fattyYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="grade2fattyYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Grade 2 fatty" id="grade2fattyNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="grade2fattyNo">خیر</label>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 mt-2">
-                        <label>گرید ۳ چربی</label>
-                        <div class="form-check">
-                            <input type="radio" name="Grade 3 fatty" id="grade3fattyYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="grade3fattyYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Grade 3 fatty" id="grade3fattyNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="grade3fattyNo">خیر</label>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 mt-2">
-                        <label>هپاتومگالی</label>
-                        <div class="form-check">
-                            <input type="radio" name="Hepatomegaly" id="hepatomegalyYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="hepatomegalyYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Hepatomegaly" id="hepatomegalyNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="hepatomegalyNo">خیر</label>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 mt-2">
-                        <label>اسپلنومگالی</label>
-                        <div class="form-check">
-                            <input type="radio" name="splenomegaly" id="splenomegalyYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="splenomegalyYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="splenomegaly" id="splenomegalyNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="splenomegalyNo">خیر</label>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 mt-2">
-                        <label>علائم سیروز محیطی</label>
-                        <div class="form-check">
-                            <input type="radio" name="Cirrhosis_peripheral_symptoms" id="cirrhosisSymptomsYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="cirrhosisSymptomsYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Cirrhosis_peripheral_symptoms" id="cirrhosisSymptomsNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="cirrhosisSymptomsNo">خیر</label>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 mt-2">
-                        <label for="IMTR">IMT – راست</label>
-                        <input type="number" class="form-control" name="IMT_-_R" id="IMTR" step="0.1">
-                    </div>
-                    
-                    <div class="col-md-3 mt-2">
-                        <label for="IMTL">IMT – چپ</label>
-                        <input type="number" class="form-control" name="IMT_-_L" id="IMTL" step="0.1">
-                    </div>
                     
                     <div class="col-md-3 mt-2">
                         <label for="AST">AST</label>
@@ -162,26 +162,7 @@
                         <label for="TG">تری گلیسیرید</label>
                         <input type="number" class="form-control" name="TG" id="TG">
                     </div>
-                    <div class="col-md-3 mt-2">
-                        <label for="BMI">BMI</label>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <input type="number" name="BMI" class="form-control" id="BMI" step="0.1">
-                            </div>
-                            <div class="col-md-7">
-                                <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#bmiModal">محاسبه BMI</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <button type="button" class="btn btn-primary mt-5" onclick="nextStep()">بعدی</button>
-            </div>
-            
-    
-            <!-- Step 2 -->
-            <div class="form-step" style="display: none;">
-                <div class="row">
+
                     <div class="col-md-2 mt-2">
                         <label for="FBS">FBS</label>
                         <input type="number" class="form-control" name="FBS" id="FBS">
@@ -217,66 +198,102 @@
                         <label for="URIC_ACID">اسید اوریک</label>
                         <input type="number" class="form-control" name="URIC_ACID" id="URIC_ACID" step="0.1">
                     </div>
-        
-                    <div class="col-md-2 mt-2">
-                        <label>دیابت</label>
-                        <div class="form-check">
-                            <input type="radio" name="Diabetes" id="DiabetesYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="DiabetesYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Diabetes" id="DiabetesNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="DiabetesNo">خیر</label>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mt-2">
-                        <label>چربی خون بالا</label>
-                        <div class="form-check">
-                            <input type="radio" name="Hyperlipidemia" id="HyperlipidemiaYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="HyperlipidemiaYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Hyperlipidemia" id="HyperlipidemiaNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="HyperlipidemiaNo">خیر</label>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-2 mt-2">
-                        <label>فشار خون بالا</label>
-                        <div class="form-check">
-                            <input type="radio" name="Hypertension" id="HypertensionYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="HypertensionYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Hypertension" id="HypertensionNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="HypertensionNo">خیر</label>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mt-2">
-                        <label>الکلی</label>
-                        <div class="form-check">
-                            <input type="radio" name="Alcoholic" id="AlcoholicYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="AlcoholicYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Alcoholic" id="AlcoholicNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="AlcoholicNo">خیر</label>
-                        </div>
-                    </div>
-                    <div class="col-md-2 mt-2">
-                        <label>سیگاری</label>
-                        <div class="form-check">
-                            <input type="radio" name="Smoker" id="SmokerYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="SmokerYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Smoker" id="SmokerNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="SmokerNo">خیر</label>
-                        </div>
-                    </div>
 
+                    
+                </div>
+               <div class="text-left">
+                <button type="button" class="btn btn-secondary mt-5" onclick="prevStep()">قبلی</button>
+                <button type="button" class="btn btn-primary mt-5" onclick="nextStep()">بعدی</button>
+               </div>
+            </div>
+
+
+
+
+            <div class="form-step" style="display: none">
+                <div class="row">
                     <div class="col-md-2 mt-2">
-                        <label>Uniforms</label>
+                        <label for="IMTR">IMT – راست</label>
+                        <input type="number" class="form-control" name="IMT_-_R" id="IMTR" step="0.1">
+                    </div>
+                    
+                    <div class="col-md-2 mt-2">
+                        <label for="IMTL">IMT – چپ</label>
+                        <input type="number" class="form-control" name="IMT_-_L" id="IMTL" step="0.1">
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <label>گرید ۱ چربی</label>
+                        <div class="form-check">
+                            <input type="radio" name="Grade 1 fatty" id="grade1fatty" value="1" class="form-check-input">
+                            <label class="form-check-label" for="grade1fatty">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Grade 1 fatty" id="grade1fattyNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="grade1fattyNo">خیر</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 mt-2">
+                        <label>گرید ۲ چربی</label>
+                        <div class="form-check">
+                            <input type="radio" name="Grade 2 fatty" id="grade2fattyYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="grade2fattyYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Grade 2 fatty" id="grade2fattyNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="grade2fattyNo">خیر</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 mt-2">
+                        <label>گرید ۳ چربی</label>
+                        <div class="form-check">
+                            <input type="radio" name="Grade 3 fatty" id="grade3fattyYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="grade3fattyYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Grade 3 fatty" id="grade3fattyNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="grade3fattyNo">خیر</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 mt-2">
+                        <label>هپاتومگالی</label>
+                        <div class="form-check">
+                            <input type="radio" name="Hepatomegaly" id="hepatomegalyYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="hepatomegalyYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Hepatomegaly" id="hepatomegalyNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="hepatomegalyNo">خیر</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 mt-2">
+                        <label>اسپلنومگالی</label>
+                        <div class="form-check">
+                            <input type="radio" name="splenomegaly" id="splenomegalyYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="splenomegalyYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="splenomegaly" id="splenomegalyNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="splenomegalyNo">خیر</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 mt-2">
+                        <label>علائم سیروز محیطی</label>
+                        <div class="form-check">
+                            <input type="radio" name="Cirrhosis_peripheral_symptoms" id="cirrhosisSymptomsYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="cirrhosisSymptomsYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Cirrhosis_peripheral_symptoms" id="cirrhosisSymptomsNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="cirrhosisSymptomsNo">خیر</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <label>یکنواخت</label>
                         <div class="form-check">
                             <input type="radio" name="Uniforms" id="UniformsYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="UniformsYes">بله</label>
@@ -287,7 +304,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 mt-2">
-                        <label>non_uniform</label>
+                        <label>غیریکنواخت</label>
                         <div class="form-check">
                             <input type="radio" name="non_uniform" id="non-uniformYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="non-uniformYes">بله</label>
@@ -299,7 +316,7 @@
                     </div>
 
                     <div class="col-md-2 mt-2">
-                        <label>RUQ pain</label>
+                        <label>درد در  ناحیه RUQ</label>
                         <div class="form-check">
                             <input type="radio" name="RUQ pain" id="RUQ painYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="RUQ painYes">بله</label>
@@ -310,7 +327,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 mt-2">
-                        <label>Vague discomfort RUQ</label>
+                        <label>ناراحتی مبهم در RUQ</label>
                         <div class="form-check">
                             <input type="radio" name="Vague_discomfort_RUQ" id="Vague discomfort RUQYes" value="1" class="form-check-input">
                             <label class="form-check-label" for="Vague discomfort RUQYes">بله</label>
@@ -320,17 +337,17 @@
                             <label class="form-check-label" for="Vague discomfort RUQNo">خیر</label>
                         </div>
                     </div>
-
-                    
                 </div>
-                <button type="button" class="btn btn-secondary mt-5" onclick="prevStep()">قبلی</button>
-                <button type="button" class="btn btn-primary mt-5" onclick="nextStep()">بعدی</button>
+                <div class="text-left">
+                    <button type="button" class="btn btn-secondary mt-5" onclick="prevStep()">قبلی</button>
+                    <button type="button" class="btn btn-primary mt-5" onclick="nextStep()">بعدی</button>
+                   </div>
             </div>
     
             <!-- Step 3 -->
             <div class="form-step">
                 <div class="row">
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label>میتوترکسات</label>
                         <div class="form-check">
                             <input type="radio" name="Methotrexate" id="MethotrexateYes" value="1" class="form-check-input">
@@ -342,7 +359,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label>آسپرین</label>
                         <div class="form-check">
                             <input type="radio" name="Aspirin" id="AspirinYes" value="1" class="form-check-input">
@@ -354,7 +371,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label>گلوکوکورتیکوئیدها</label>
                         <div class="form-check">
                             <input type="radio" name="Glucocorticoids" id="GlucocorticoidsYes" value="1" class="form-check-input">
@@ -379,30 +396,6 @@
                     </div>
         
                     <div class="col-md-3 mt-2">
-                        <label>استروژن</label>
-                        <div class="form-check">
-                            <input type="radio" name="Estrogen" id="EstrogenYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="EstrogenYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Estrogen" id="EstrogenNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="EstrogenNo">خیر</label>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-3 mt-2">
-                        <label>تتراسایکلین</label>
-                        <div class="form-check">
-                            <input type="radio" name="Tetracycline" id="TetracyclineYes" value="1" class="form-check-input">
-                            <label class="form-check-label" for="TetracyclineYes">بله</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" name="Tetracycline" id="TetracyclineNo" value="0" class="form-check-input">
-                            <label class="form-check-label" for="TetracyclineNo">خیر</label>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-3 mt-2">
                         <label>آنالوگ های نوکلئولیز</label>
                         <div class="form-check">
                             <input type="radio" name="Nucleolysis analogs" id="NucleolysisAnalogsYes" value="1" class="form-check-input">
@@ -414,7 +407,32 @@
                         </div>
                     </div>
         
-                    <div class="col-md-3 mt-2">
+        
+                    <div class="col-md-2 mt-2">
+                        <label>تتراسایکلین</label>
+                        <div class="form-check">
+                            <input type="radio" name="Tetracycline" id="TetracyclineYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="TetracyclineYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Tetracycline" id="TetracyclineNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="TetracyclineNo">خیر</label>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <label>استروژن</label>
+                        <div class="form-check">
+                            <input type="radio" name="Estrogen" id="EstrogenYes" value="1" class="form-check-input">
+                            <label class="form-check-label" for="EstrogenYes">بله</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="Estrogen" id="EstrogenNo" value="0" class="form-check-input">
+                            <label class="form-check-label" for="EstrogenNo">خیر</label>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="col-md-2 mt-2">
                         <label>داروهای شیمی درمانی</label>
                         <div class="form-check">
                             <input type="radio" name="Chemotherapy drugs" id="ChemotherapyDrugsYes" value="1" class="form-check-input">
@@ -426,7 +444,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <label>تاموکسیفن</label>
                         <div class="form-check">
                             <input type="radio" name="Tamoxifen" id="TamoxifenYes" value="1" class="form-check-input">
@@ -438,8 +456,10 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-secondary mt-5" onclick="prevStep()">قبلی</button>
+                <div class="text-left">
+                    <button type="button" class="btn btn-secondary mt-5" onclick="prevStep()">قبلی</button>
                 <button type="submit" class="btn btn-primary mt-5">ثبت اطلاعات</button>
+                </div>
             </div>
     </div>
     
@@ -471,6 +491,7 @@
     </div>
     
 </form>
+</div>
 <script>
     document.getElementById('calculateBmi').addEventListener('click', function() {
         var height = document.getElementById('height').value;
