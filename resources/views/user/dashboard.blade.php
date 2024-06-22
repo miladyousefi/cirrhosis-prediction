@@ -6,7 +6,7 @@
     <div class="col-md-3">
         <div class="card p-4 shadow border border-0" style="border-radius: 15px;background-color: #e2ecf7">
             <div class="card-body text-center">
-                تعداد بیماران  
+                تعداد بیماران
                 <div class="mt-3 text-primary">
                     {{$patients_count}}
                 </div>
@@ -26,7 +26,7 @@
     <div class="col-md-3 ">
         <div class="card p-4 shadow border border-0" style="border-radius: 15px;background-color: #e2ecf7">
             <div class="card-body text-center">
-                تعداد یاداشت ها  
+                تعداد یاداشت ها
                 <div class="mt-3 text-primary">
                     {{$notes_count}}
                 </div>
@@ -48,27 +48,27 @@
     @foreach ($requests as $index=>$request)
     <div class="row mt-2 p-2 py-4" style="border-radius: 15px; background-color: #eeeff0">
 
-    <div class="col-3">
+    <div class="col-2">
         {{ $index+1 }} - {{ $request->patient->first_name }} {{ $request->patient->last_name }}
     </div>
-    <div class="col-2">
+    <div class="col-3">
         کد ملی : {{ $request->patient->national_code }}
     </div>
     <div class="col-2">
         ش-پرونده : {{ $request->patient->file_code }}
     </div>
-    <div class="col-2 text-center">
+    <div class="col-3 text-center">
         {{ $request->result ? $request->result==1 ?'مبتلا به بیماری سیروس کبدی' : 'سالم' : '-' }}
     </div>
-    <div class="col-3 text-left">
+    <div class="col-2 text-left">
         {{verta($request->created_at)->format('Y/m/d')}}
     </div>
-             
+
             </div>
 
               @endforeach
 </div>
-    
+
 <div class="text-center mt-2">
             {{$requests->links('layouts.paginate')}}
           </div>
