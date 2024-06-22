@@ -6,7 +6,7 @@
         <button class="btn btn-outline-light d-none toggle-side" id="toggleSidebar"><i class="fas fa-bars"></i></button>
 
         <div class="date-display">
-            <a class="text-danger btn p-0" href="/"><i class="fas fa-home" style="font-size: 25px"></i></a>
+            <a class="text-info btn p-0" href="/"><i class="fas fa-home" style="font-size: 25px"></i></a>
         </div>
     </div>
 </div>
