@@ -20,10 +20,10 @@
                       <label for="note">متن</label>
                       <textarea id="note" rows="10" name="note" placeholder="یاداشت خود را وارد نمایید" class="form-control"></textarea>
                   </div>
-                
+
                   <div class="col-md-12 mt-2">
                       <label for="expertation"> </label>
-  
+
                   <button class="btn btn-success btn-block">ذخیره</button>
                   </div>
               </div>
@@ -47,6 +47,10 @@
                 <div id="panelsStayOpen-collapseOne{{$note->id}}" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne{{$note->id}}">
                   <div class="accordion-body">
                       {!! $note->note !!}
+                  </div>
+                  <div class="text-left">
+                    <a href="{{ route('note.destroy',$note) }}" class="btn btn-danger btn-sm m-2">حذف یادداشت</a>
+
                   </div>
                 </div>
               </div>

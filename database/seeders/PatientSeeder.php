@@ -22,7 +22,6 @@ class PatientSeeder extends Seeder
             'birth_date'=>'1998-11-06',
             'image'=>null,
             'phone'=>'09226295580',
-            'file_code'=>'1425',
             'sex'=>1
         ]);
     }

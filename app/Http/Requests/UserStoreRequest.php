@@ -24,7 +24,6 @@ class UserStoreRequest extends FormRequest
         return [
             'first_name' => 'nullable|string|max:255',
             'last_name' => 'nullable|string|max:255',
-            'file_code' => 'nullable|string|max:255|unique:patients,file_code',
             'age' => 'nullable|integer|min:0',
             'phone' => 'required|string|max:15|unique:patients,phone',
             'national_code' => 'nullable|string|max:10|unique:patients,national_code',

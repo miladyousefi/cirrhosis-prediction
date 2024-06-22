@@ -15,7 +15,7 @@
     </div>
     <div class="menu">
         <a href="{{ route('dashboard') }}"><i class="fas fa-home mx-2" style="font-size: 20px"></i> داشبورد</a>
-        <a href="{{route('request')}}"><i class="fas fa-graduation-cap mx-2" style="font-size: 20px"></i> پیش بینی  </a>
+        <a href="{{route('request')}}"><i class="fas fa-clone mx-2" style="font-size: 20px"></i> پیش بینی  </a>
         <a href="{{ route('user') }}" class="setting"><i class="fas fa-users mx-2" style="font-size: 20px"></i>بیماران</a>
         <a href="{{route('note')}}"><i class="fa fa-sticky-note mx-2" style="font-size: 20px"></i>یاداشت</a>
         <a href="{{route('setting')}}"><i class="fas fa-user-cog mx-2" style="font-size: 20px"></i>تنظیمات</a>

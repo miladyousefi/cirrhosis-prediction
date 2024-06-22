@@ -26,11 +26,8 @@
             <label for="last_name">نام خانوادگی</label>
             <input type="text" name="last_name" class="form-control" id="last_name" value="{{isset($patient) ? $patient->last_name : null}}">
         </div>
+
         <div class="col-md-2 mt-2">
-            <label for="file_code">کدپرونده</label>
-            <input type="text" name="file_code" class="form-control" id="file_code" value="{{isset($patient) ? $patient->file_code : null}}">
-        </div>
-        <div class="col-md-1 mt-2">
             <label for="age">سن</label>
             <input type="text" name="age" class="form-control" id="age" value="{{isset($patient) ? $patient->age : null}}">
         </div>
@@ -42,7 +39,7 @@
             <label for="national_code">کد ملی</label>
             <input type="text" name="national_code" class="form-control" id="national_code" value="{{isset($patient) ? $patient->national_code : null}}">
         </div>
-        <div class="col-md-1 mt-2">
+        <div class="col-md-2 mt-2">
             <label for="sex">جنسیت</label>
             <select class="form-control" name="sex" id="sex">
                 <option value="1" selected>مرد</option>

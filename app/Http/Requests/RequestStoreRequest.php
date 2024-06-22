@@ -24,7 +24,6 @@ class RequestStoreRequest extends FormRequest
         return [
             'first_name' => 'nullable|string|max:255',
             'last_name' => 'nullable|string|max:255',
-            'file_code' => 'nullable|string|max:255',
             'age' => 'nullable|integer|min:0',
             'phone' => 'required|string|max:15',
             'national_code' => 'nullable|string|max:10',

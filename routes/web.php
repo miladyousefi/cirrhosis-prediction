@@ -41,11 +41,15 @@ Route::prefix('user')->middleware('auth')->group(function () {
     Route::get('request', [RequestController::class,'index'])->name('request');
     Route::post('request-store', [RequestController::class,'store'])->name('request.store');
     Route::get('user-list', [PatientController::class,'index'])->name('user');
+    Route::get('patient-show/{patient}', [PatientController::class,'show'])->name('user.show');
+
     Route::get('setting', [ControllersSettingController::class,'index'])->name('setting');
     Route::post('setting-update', [ControllersSettingController::class,'update'])->name('setting.update');
 
     Route::get('note', [NoteController::class,'index'])->name('note');
     Route::post('note-update', [NoteController::class,'store'])->name('note.store');
+    Route::get('note/{note}', [NoteController::class,'destroy'])->name('note.destroy');
+
 
 });
 

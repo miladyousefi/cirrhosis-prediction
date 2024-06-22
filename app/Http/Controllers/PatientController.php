@@ -16,4 +16,8 @@ class PatientController extends Controller
 
         return view('user.user',compact('patients'));
     }
+
+    public function show(Patient $patient){
+        return view('user.show-patient',compact('patient'));
+    }
 }

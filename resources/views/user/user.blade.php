@@ -17,7 +17,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
     </div>
     <div class="card-body p-0">
@@ -39,7 +39,8 @@
                 <td>{{ $patient->last_name }}</td>
                 <td>{{ $patient->national_code }}</td>
                 <td class="text-center">
-                    <a href="{{route('request')}}?patient_id={{$patient->id}}"><i class="fa fa-eye"></i></a>
+                    <a class="p-2" href="{{route('request')}}?patient_id={{$patient->id}}"><i class="fa fa-clone"></i></a>
+                    <a class="p-2" href="{{ route('user.show',$patient) }}"><i class="fa fa-eye"></i></a>
                 </td>
               </tr>
               @endforeach

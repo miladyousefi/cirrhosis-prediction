@@ -22,6 +22,25 @@ class Patient extends Model
     ];
     public function requests(){
         return $this->hasMany(Request::class, 'patient_id');
-
     }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($patient) {
+            $patient->file_code = static::generateUniqueCode();
+        });
+    }
+
+    protected static function generateUniqueCode()
+    {
+        do {
+            $code = mt_rand(1000000, 9999999);
+        } while (self::where('file_code', $code)->exists());
+
+        return $code;
+    }
+
+
 }

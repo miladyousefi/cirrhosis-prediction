@@ -24,4 +24,9 @@ class NoteController extends Controller
         $note=Note::create($data);
         return redirect()->back()->with('success','با موفقیت یاداشت ایجاد شد');
     }
+
+    public function destroy(Note $note){
+        $note->delete();
+        return redirect()->back()->with('success','با موفقیت یاداشت حذف گردید');
+    }
 }
