@@ -357,75 +357,76 @@
                 <div class="row">
                     <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="Methotrexate" id="Methotrexate" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Methotrexate" id="MethotrexateYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="Methotrexate">میتوترکسات</label>
+                        <label class="form-check-label d-inline-block" for="MethotrexateYes">میتوترکسات</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="Aspirin" id="Aspirin" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Aspirin" id="AspirinYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="Aspirin">آسپرین</label>
+                        <label class="form-check-label d-inline-block" for="AspirinYes">آسپرین</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="Glucocorticoids" id="Glucocorticoids" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Glucocorticoids" id="GlucocorticoidsYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="Glucocorticoids">گلوکوکورتیکوئیدها</label>
+                        <label class="form-check-label d-inline-block" for="GlucocorticoidsYes">گلوکوکورتیکوئیدها</label>
                     </div>
 
                     <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="CalciumChannelBlockers" id="CalciumChannelBlockers" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Calcium channel blockers" id="CalciumChannelBlockersYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="CalciumChannelBlockers">مسدود کننده های کانال کلسیم</label>
+                        <label class="form-check-label d-inline-block" for="CalciumChannelBlockersYes">مسدود کننده های کانال کلسیم</label>
                     </div>
 
                     <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="NucleolysisAnalogs" id="NucleolysisAnalogs" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Nucleolysis analogs" id="NucleolysisAnalogsYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="NucleolysisAnalogs">آنالوگ های نوکلئولیز</label>
+                        <label class="form-check-label d-inline-block" for="NucleolysisAnalogsYes">آنالوگ های نوکلئولیز</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="Tetracycline" id="Tetracycline" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Tetracycline" id="TetracyclineYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="Tetracycline">تتراسایکلین</label>
+                        <label class="form-check-label d-inline-block" for="TetracyclineYes">تتراسایکلین</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="Estrogen" id="Estrogen" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Estrogen" id="EstrogenYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="Estrogen">استروژن</label>
+                        <label class="form-check-label d-inline-block" for="EstrogenYes">استروژن</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="ChemotherapyDrugs" id="ChemotherapyDrugs" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Chemotherapy drugs" id="ChemotherapyDrugsYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="ChemotherapyDrugs">داروهای شیمی درمانی</label>
+                        <label class="form-check-label d-inline-block" for="ChemotherapyDrugsYes">داروهای شیمی درمانی</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
-                            <input type="checkbox" name="Tamoxifen" id="Tamoxifen" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
+                            <input type="checkbox" name="Tamoxifen" id="TamoxifenYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="Tamoxifen">تاموکسیفن</label>
+                        <label class="form-check-label d-inline-block" for="TamoxifenYes">تاموکسیفن</label>
                     </div>
+
 
 
                 </div>
