@@ -182,7 +182,7 @@
                         </div>
 
                         <div class="col-md-2 mt-2">
-                            <label for="CHOLESTROL">CHOLESTROL</label>
+                            <label for="CHOLESTEROL">CHOLESTEROL</label>
                             <input type="number" class="form-control" name="CHOLESTROL" id="CHOLESTROL">
                         </div>
 
