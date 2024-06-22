@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container">
                 <h4 class="mt-5">پیش بینی های اخیر</h4>
                 @foreach ($patient->requests as $index => $request)
                     <div class="row mt-2 p-2 py-4" style="border-radius: 15px; background-color: #eeeff0">
