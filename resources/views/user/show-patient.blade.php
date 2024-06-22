@@ -53,7 +53,7 @@
                         </div>
 
                         <div class="col-6 text-center">
-                            {{ $request->result ? ($request->result == 1 ? 'مبتلا به بیماری سیروس کبدی' : 'سالم') : '-' }}
+                            {{ $request->result ? ($request->result == 1 ? 'مبتلا به بیماری سیروز کبدی' : 'سالم') : '-' }}
                         </div>
                         <div class="col-3 text-left">
                             {{ verta($request->created_at)->format('Y/m/d') }}

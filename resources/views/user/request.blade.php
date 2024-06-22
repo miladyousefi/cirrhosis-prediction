@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Diabetes" id="DiabetesYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -107,7 +107,7 @@
                         <label class="form-check-label d-inline-block" for="HypertensionYes">فشار خون بالا</label>
                     </div>
 
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-2 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Alcoholic" id="AlcoholicYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -168,12 +168,12 @@
                     </div>
 
                     <div class="col-md-2 mt-2">
-                        <label for="CHOLESTROL">کلسترول</label>
+                        <label for="CHOLESTROL">CHOLESTROL</label>
                         <input type="number" class="form-control" name="CHOLESTROL" id="CHOLESTROL">
                     </div>
 
                     <div class="col-md-2 mt-2">
-                        <label for="TG">تری گلیسیرید</label>
+                        <label for="TG">TG</label>
                         <input type="number" class="form-control" name="TG" id="TG">
                     </div>
 
@@ -200,7 +200,7 @@
                         <input type="number" class="form-control" name="HDL" id="HDL">
                     </div>
                     <div class="col-md-2 mt-2">
-                        <label for="Urea">اوریا</label>
+                        <label for="Urea">Urea</label>
                         <input type="number" class="form-control" name="Urea" id="Urea">
                     </div>
 
@@ -209,7 +209,7 @@
                         <input type="number" class="form-control" name="Cr" id="Cr" step="0.1">
                     </div>
                     <div class="col-md-2 mt-2">
-                        <label for="URIC_ACID">اسید اوریک</label>
+                        <label for="URIC_ACID">URIC ACID</label>
                         <input type="number" class="form-control" name="URIC_ACID" id="URIC_ACID" step="0.1">
                     </div>
 
@@ -254,7 +254,7 @@
                             <input type="checkbox" name="Grade 1 fatty" id="grade1fatty" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="grade1fatty">گرید ۱ چربی</label>
+                        <label class="form-check-label d-inline-block" for="grade1fatty">کبد چرب گرید یک</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
@@ -262,7 +262,7 @@
                             <input type="checkbox" name="Grade 2 fatty" id="grade2fattyYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="grade2fattyYes">گرید ۲ چربی</label>
+                        <label class="form-check-label d-inline-block" for="grade2fattyYes">کبد چرب گرید دو</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
@@ -270,7 +270,7 @@
                             <input type="checkbox" name="Grade 3 fatty" id="grade3fattyYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="grade3fattyYes">گرید ۳ چربی</label>
+                        <label class="form-check-label d-inline-block" for="grade3fattyYes">کبد چرب گرید سه</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
@@ -294,7 +294,7 @@
                             <input type="checkbox" name="Cirrhosis_peripheral_symptoms" id="cirrhosisSymptomsYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="cirrhosisSymptomsYes">علائم سیروز محیطی</label>
+                        <label class="form-check-label d-inline-block" for="cirrhosisSymptomsYes">علائم محیطی سیروز</label>
                     </div>
 
                     <div class="col-md-2 mt-2">
@@ -318,7 +318,7 @@
                             <input type="checkbox" name="RUQ pain" id="RUQpainYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="RUQpainYes">درد در ناحیه RUQ</label>
+                        <label class="form-check-label d-inline-block" for="RUQpainYes">درد ناحیه RUQ</label>
                     </div>
 
                     <div class="col-md-3 mt-2">
@@ -326,7 +326,7 @@
                             <input type="checkbox" name="Vague_discomfort_RUQ" id="Vague_discomfort_RUQYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="Vague_discomfort_RUQYes">ناراحتی مبهم در RUQ</label>
+                        <label class="form-check-label d-inline-block" for="Vague_discomfort_RUQYes">ناراحتی مبهم RUQ</label>
                     </div>
 
                 </div>
@@ -360,7 +360,7 @@
                             <input type="checkbox" name="Methotrexate" id="MethotrexateYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
                         </div>
-                        <label class="form-check-label d-inline-block" for="MethotrexateYes">میتوترکسات</label>
+                        <label class="form-check-label d-inline-block" for="MethotrexateYes">متوترکسات</label>
                     </div>
 
                     <div class="col-md-3 mt-2">
