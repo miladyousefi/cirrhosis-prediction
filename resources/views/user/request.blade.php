@@ -289,7 +289,7 @@
                         <label class="form-check-label d-inline-block" for="splenomegalyYes">اسپلنومگالی</label>
                     </div>
 
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Cirrhosis_peripheral_symptoms" id="cirrhosisSymptomsYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -321,7 +321,7 @@
                         <label class="form-check-label d-inline-block" for="RUQpainYes">درد در ناحیه RUQ</label>
                     </div>
 
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Vague_discomfort_RUQ" id="Vague_discomfort_RUQYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -422,7 +422,7 @@
                         </div>
                         <label class="form-check-label d-inline-block" for="NucleolysisAnalogsYes">آنالوگ های نوکلئولیز</label>
                     </div>
-                    <div class="col-md-3 mt-2">
+                    <div class="col-md-4 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Calcium channel blockers" id="CalciumChannelBlockersYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
