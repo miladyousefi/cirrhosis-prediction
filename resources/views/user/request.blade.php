@@ -355,7 +355,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Methotrexate" id="MethotrexateYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -363,7 +363,7 @@
                         <label class="form-check-label d-inline-block" for="MethotrexateYes">میتوترکسات</label>
                     </div>
 
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Aspirin" id="AspirinYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -371,7 +371,7 @@
                         <label class="form-check-label d-inline-block" for="AspirinYes">آسپرین</label>
                     </div>
 
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Glucocorticoids" id="GlucocorticoidsYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -395,7 +395,7 @@
                         <label class="form-check-label d-inline-block" for="NucleolysisAnalogsYes">آنالوگ های نوکلئولیز</label>
                     </div>
 
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Tetracycline" id="TetracyclineYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -403,7 +403,7 @@
                         <label class="form-check-label d-inline-block" for="TetracyclineYes">تتراسایکلین</label>
                     </div>
 
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Estrogen" id="EstrogenYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -411,7 +411,7 @@
                         <label class="form-check-label d-inline-block" for="EstrogenYes">استروژن</label>
                     </div>
 
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Chemotherapy drugs" id="ChemotherapyDrugsYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
@@ -419,7 +419,7 @@
                         <label class="form-check-label d-inline-block" for="ChemotherapyDrugsYes">داروهای شیمی درمانی</label>
                     </div>
 
-                    <div class="col-md-2 mt-2">
+                    <div class="col-md-3 mt-2">
                         <div class="form-check d-inline-block">
                             <input type="checkbox" name="Tamoxifen" id="TamoxifenYes" value="0" class="form-check-input" onchange="this.value=this.checked?1:0;">
                             <label></label>
