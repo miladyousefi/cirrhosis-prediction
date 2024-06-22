@@ -17,7 +17,7 @@ class AuthController extends Controller
         $credentials = $loginRequest->only('username', 'password');
 
         if (Auth::attempt($credentials)) {
-            return redirect()->route('dashboard');
+            return view('user.index');
         }
         return back()->withErrors([
             'username' => 'نام کاربری یا رمز عبور اشتباه است.',

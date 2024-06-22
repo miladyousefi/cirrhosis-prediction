@@ -272,7 +272,7 @@
                                     class="form-check-input" onchange="this.value=this.checked?1:0;">
                                 <label></label>
                             </div>
-                            <label class="form-check-label d-inline-block" for="grade1fatty">کبدچربگرید یک</label>
+                            <label class="form-check-label d-inline-block" for="grade1fatty">کبد چرب گرید 1</label>
                         </div>
 
                         <div class="col-md-2 mt-2">
@@ -281,7 +281,7 @@
                                     class="form-check-input" onchange="this.value=this.checked?1:0;">
                                 <label></label>
                             </div>
-                            <label class="form-check-label d-inline-block" for="grade2fattyYes">کبد چربگرید دو</label>
+                            <label class="form-check-label d-inline-block" for="grade2fattyYes">کبد چرب گرید 2</label>
                         </div>
 
                         <div class="col-md-2 mt-2">
@@ -290,7 +290,7 @@
                                     class="form-check-input" onchange="this.value=this.checked?1:0;">
                                 <label></label>
                             </div>
-                            <label class="form-check-label d-inline-block" for="grade3fattyYes">کبدچرب گریدسه</label>
+                            <label class="form-check-label d-inline-block" for="grade3fattyYes">کبد چرب گرید 3</label>
                         </div>
 
                         <div class="col-md-2 mt-2">
