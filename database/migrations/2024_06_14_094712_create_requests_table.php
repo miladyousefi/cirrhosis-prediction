@@ -31,7 +31,7 @@ return new class extends Migration
             $table->decimal('FBS', 8, 4)->nullable();
             $table->decimal('Hb', 8, 4)->nullable();
             $table->decimal('Hct', 8, 4)->nullable();
-            $table->decimal('Plt', 8, 4)->nullable();
+            $table->string('Plt')->nullable();
             $table->decimal('HDL', 8, 4)->nullable();
             $table->decimal('Urea', 8, 4)->nullable();
             $table->decimal('Cr', 8, 4)->nullable();
